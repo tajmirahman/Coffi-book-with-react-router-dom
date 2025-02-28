@@ -8,10 +8,10 @@ const Categories = ({categories}) => {
     return (
         <div className="flex justify-evenly mt-10">
 
-        {
-            categories.map(category=> <Category key={category.id} category={category}></Category>)
-        }
-
+       {
+        categories.map(category=> <Category key={category.id} category={category}></Category>)
+       }
+        
             
             
         </div>

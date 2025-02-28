@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 
 const Category = ({ category }) => {
-    // console.log(category.)
+    // console.log(category)
     return (
         <div>
             <div role="tablist" className="tabs tabs-lifted">
-                <Link to={category.category} role="tab" className="tab">{category.category}</Link>
+                <Link to={`/category/${category.category}`} role="tab" className="tab">{category.category}</Link>
 
             </div>
 
