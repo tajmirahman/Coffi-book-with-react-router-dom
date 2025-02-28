@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const Title = ({title, subTitle}) => {
     return (
@@ -8,5 +8,10 @@ const Title = ({title, subTitle}) => {
         </div>
     );
 };
+
+Title.propTypes={
+    title:PropTypes.object.isRequired,
+    subTitle:PropTypes.object.isRequired,
+}
 
 export default Title;

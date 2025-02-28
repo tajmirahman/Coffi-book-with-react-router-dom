@@ -1,0 +1,193 @@
+[
+    {
+      "id": 1,
+      "name": "Espresso",
+      "image": "https://i.ibb.co.com/XfMLF8cX/hot-coffee-cup-with-spoon-plate-23-2148180240.jpg",
+      "category": "Brewed Coffee",
+      "ingredients": ["Coffee Beans", "Water"],
+      "nutrition_info": {
+        "calories": 2,
+        "fat": 0,
+        "carbohydrates": 0,
+        "protein": 0
+      },
+      "origin": "Italy",
+      "type": "Strong",
+      "description": "A concentrated coffee brewed by forcing hot water through finely-ground coffee beans.",
+      "making_process": "Grind coffee beans finely. Pack the grounds into the portafilter and brew under high pressure.",
+      "rating": 4.5,
+      "popularity": 88
+    },
+    {
+      "id": 2,
+      "name": "Cappuccino",
+      "image": "https://i.ibb.co.com/kVZvD9wP/realistic-coffee-background-with-drawings-157027-1112.jpg",
+      "category": "Milk Coffee",
+      "ingredients": ["Espresso", "Steamed Milk", "Foamed Milk"],
+      "nutrition_info": {
+        "calories": 80,
+        "fat": 4,
+        "carbohydrates": 6,
+        "protein": 4
+      },
+      "origin": "Italy",
+      "type": "Mild",
+      "description": "A popular Italian coffee made with equal parts of espresso, steamed milk, and foamed milk.",
+      "making_process": "Pull an espresso shot, add steamed milk, and top with foamed milk.",
+      "rating": 4.7,
+      "popularity": 95
+    },
+    {
+      "id": 3,
+      "name": "Latte",
+      "image": "https://i.ibb.co.com/wFbn0WTH/coffee-is-poured-from-coffee-machine-140725-9182.jpg",
+      "category": "Milk Coffee",
+      "ingredients": ["Espresso", "Steamed Milk"],
+      "nutrition_info": {
+        "calories": 120,
+        "fat": 5,
+        "carbohydrates": 9,
+        "protein": 6
+      },
+      "origin": "Italy",
+      "type": "Smooth",
+      "description": "A creamy coffee drink made with espresso and steamed milk.",
+      "making_process": "Brew an espresso shot, add a generous amount of steamed milk.",
+      "rating": 4.6,
+      "popularity": 90
+    },
+    {
+      "id": 4,
+      "name": "Americano",
+      "image": "https://i.ibb.co.com/wZPY7JLH/bright-yellow-realistic-coffee-illustration-1284-56216.jpg",
+      "category": "Brewed Coffee",
+      "ingredients": ["Espresso", "Hot Water"],
+      "nutrition_info": {
+        "calories": 5,
+        "fat": 0,
+        "carbohydrates": 1,
+        "protein": 0
+      },
+      "origin": "United States",
+      "type": "Bold",
+      "description": "A simple coffee drink made by diluting espresso with hot water.",
+      "making_process": "Brew an espresso shot and add hot water to taste.",
+      "rating": 4.3,
+      "popularity": 85
+    },
+    {
+      "id": 5,
+      "name": "Mocha",
+      "image": "https://i.ibb.co.com/7xjPj7Sy/side-view-cup-coffee-with-wafer-roll-filled-with-condensed-milk-plate-coffee-beans-141793-6962.jpg",
+      "category": "Chocolate Coffee",
+      "ingredients": ["Espresso", "Steamed Milk", "Chocolate Syrup"],
+      "nutrition_info": {
+        "calories": 200,
+        "fat": 8,
+        "carbohydrates": 25,
+        "protein": 6
+      },
+      "origin": "Yemen",
+      "type": "Sweet",
+      "description": "A delicious blend of espresso, chocolate, and steamed milk.",
+      "making_process": "Mix chocolate syrup with espresso, then add steamed milk and optionally top with whipped cream.",
+      "rating": 4.8,
+      "popularity": 93
+    },
+    {
+      "id": 6,
+      "name": "Macchiato",
+      "image": "https://i.ibb.co.com/nMhQ9mDJ/special-coffee-menu-sale-promotional-web-banner-instagram-banner-template-505751-3240.jpg",
+      "category": "Strong Coffee",
+      "ingredients": ["Espresso", "Milk Foam"],
+      "nutrition_info": {
+        "calories": 15,
+        "fat": 1,
+        "carbohydrates": 1,
+        "protein": 1
+      },
+      "origin": "Italy",
+      "type": "Strong",
+      "description": "An espresso marked with a small amount of milk foam.",
+      "making_process": "Brew an espresso shot and add a small dollop of milk foam.",
+      "rating": 4.4,
+      "popularity": 82
+    },
+    {
+      "id": 7,
+      "name": "Flat White",
+      "image": "https://i.ibb.co.com/231GBRwX/coffee-types-illustration-concept-52683-39532.jpg",
+      "category": "Milk Coffee",
+      "ingredients": ["Espresso", "Steamed Milk"],
+      "nutrition_info": {
+        "calories": 110,
+        "fat": 4,
+        "carbohydrates": 9,
+        "protein": 6
+      },
+      "origin": "Australia",
+      "type": "Smooth",
+      "description": "A coffee drink similar to a latte but with a higher ratio of coffee to milk.",
+      "making_process": "Brew an espresso shot and add steamed milk with a fine microfoam texture.",
+      "rating": 4.6,
+      "popularity": 89
+    },
+    {
+      "id": 8,
+      "name": "Cold Brew",
+      "image": "https://i.ibb.co.com/1td4bwNM/flat-paper-coffee-cup-23-2147741046.jpg",
+      "category": "Iced Coffee",
+      "ingredients": ["Coffee Beans", "Cold Water"],
+      "nutrition_info": {
+        "calories": 5,
+        "fat": 0,
+        "carbohydrates": 1,
+        "protein": 0
+      },
+      "origin": "United States",
+      "type": "Refreshing",
+      "description": "A smooth, less acidic coffee made by steeping coffee grounds in cold water for an extended period.",
+      "making_process": "Steep coarsely ground coffee in cold water for 12-24 hours, then strain and serve over ice.",
+      "rating": 4.9,
+      "popularity": 97
+    },
+    {
+      "id": 9,
+      "name": "Irish Coffee",
+      "image": "https://i.ibb.co.com/7J042tXb/person-serving-cup-coffee-1286-227.jpg",
+      "category": "Alcoholic Coffee",
+      "ingredients": ["Coffee", "Irish Whiskey", "Sugar", "Cream"],
+      "nutrition_info": {
+        "calories": 210,
+        "fat": 10,
+        "carbohydrates": 20,
+        "protein": 2
+      },
+      "origin": "Ireland",
+      "type": "Warm & Boozy",
+      "description": "A warming coffee cocktail made with whiskey, sugar, and topped with cream.",
+      "making_process": "Brew a strong coffee, add whiskey and sugar, and top with thick cream.",
+      "rating": 4.7,
+      "popularity": 91
+    },
+    {
+      "id": 10,
+      "name": "Affogato",
+      "image": "https://i.ibb.co.com/QRNqrb2/e-mc2-energy-more-coffee-cartoon-coffee-cup-illustration-t-shirt-vector-539430-140.jpg",
+      "category": "Dessert Coffee",
+      "ingredients": ["Espresso", "Vanilla Ice Cream"],
+      "nutrition_info": {
+        "calories": 250,
+        "fat": 12,
+        "carbohydrates": 30,
+        "protein": 5
+      },
+      "origin": "Italy",
+      "type": "Sweet & Strong",
+      "description": "A simple Italian dessert where hot espresso is poured over vanilla ice cream.",
+      "making_process": "Place a scoop of vanilla ice cream in a cup and pour a shot of hot espresso over it.",
+      "rating": 4.9,
+      "popularity": 95
+    }
+  ]
+  
