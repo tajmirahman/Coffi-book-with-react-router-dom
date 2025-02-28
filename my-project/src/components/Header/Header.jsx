@@ -25,7 +25,7 @@ const Header = () => {
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <Link to={'/'}>Home</Link>
                         <Link to={'/coffee'}>Coffee</Link>
-                        <Link to={'/dashborad '}>Dashboard</Link>
+                        <Link to={'/dashboard'}>Dashboard</Link>
                     </ul>
                 </div>
                 <Link to={'/'} className="btn btn-ghost text-xl">Coffee_Book</Link>
@@ -34,7 +34,7 @@ const Header = () => {
                 <ul className="menu menu-horizontal px-1 gap-4 text-2xl">
                     <Link to={'/'}>Home</Link>
                     <Link to={'/coffee'}>Coffee</Link>
-                    <Link to={'/dashborad '}>Dashboard</Link>
+                    <Link to={'/dashboard'}>Dashboard</Link>
 
                 </ul>
             </div>
