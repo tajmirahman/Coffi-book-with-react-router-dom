@@ -22,7 +22,7 @@
       "id": 2,
       "name": "Cappuccino",
       "image": "https://i.ibb.co.com/kVZvD9wP/realistic-coffee-background-with-drawings-157027-1112.jpg",
-      "category": "Milk Coffee",
+      "category": "Iced Coffee",
       "ingredients": ["Espresso", "Steamed Milk", "Foamed Milk"],
       "nutrition_info": {
         "calories": 80,
@@ -41,7 +41,7 @@
       "id": 3,
       "name": "Latte",
       "image": "https://i.ibb.co.com/wFbn0WTH/coffee-is-poured-from-coffee-machine-140725-9182.jpg",
-      "category": "Milk Coffee",
+      "category": "Dessert Coffee",
       "ingredients": ["Espresso", "Steamed Milk"],
       "nutrition_info": {
         "calories": 120,
@@ -79,7 +79,7 @@
       "id": 5,
       "name": "Mocha",
       "image": "https://i.ibb.co.com/7xjPj7Sy/side-view-cup-coffee-with-wafer-roll-filled-with-condensed-milk-plate-coffee-beans-141793-6962.jpg",
-      "category": "Chocolate Coffee",
+      "category": "Brewed Coffee",
       "ingredients": ["Espresso", "Steamed Milk", "Chocolate Syrup"],
       "nutrition_info": {
         "calories": 200,
@@ -98,7 +98,7 @@
       "id": 6,
       "name": "Macchiato",
       "image": "https://i.ibb.co.com/nMhQ9mDJ/special-coffee-menu-sale-promotional-web-banner-instagram-banner-template-505751-3240.jpg",
-      "category": "Strong Coffee",
+      "category": "Dessert Coffee",
       "ingredients": ["Espresso", "Milk Foam"],
       "nutrition_info": {
         "calories": 15,
@@ -117,7 +117,7 @@
       "id": 7,
       "name": "Flat White",
       "image": "https://i.ibb.co.com/231GBRwX/coffee-types-illustration-concept-52683-39532.jpg",
-      "category": "Milk Coffee",
+      "category": "Dessert Coffee",
       "ingredients": ["Espresso", "Steamed Milk"],
       "nutrition_info": {
         "calories": 110,
@@ -153,9 +153,9 @@
     },
     {
       "id": 9,
-      "name": "Irish Coffee",
+      "name": "Alcoholic Coffee",
       "image": "https://i.ibb.co.com/7J042tXb/person-serving-cup-coffee-1286-227.jpg",
-      "category": "Alcoholic Coffee",
+      "category": "Iced Coffee",
       "ingredients": ["Coffee", "Irish Whiskey", "Sugar", "Cream"],
       "nutrition_info": {
         "calories": 210,

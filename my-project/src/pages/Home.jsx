@@ -1,4 +1,4 @@
-import { Outlet, useLoaderData } from "react-router-dom";
+import { Outlet,  } from "react-router-dom";
 import Banner from "../components/Banner/Banner";
 import Categories from "../components/Categories/Categories";
 import Title from "../components/HeadingTitle/Title";
@@ -6,7 +6,7 @@ import Title from "../components/HeadingTitle/Title";
 
 const Home = () => {
 
-    const categories=useLoaderData();
+    // const categories=useLoaderData();
 
     return (
         <div>
@@ -21,8 +21,8 @@ const Home = () => {
 
             {/* Category tab section */}
 
-            <Categories categories={categories}/>
-            
+            <Categories />
+
             <Outlet />
 
 
