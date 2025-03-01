@@ -2,18 +2,21 @@ import PropTypes from 'prop-types';
 
 const Card = ({ coffee }) => {
     // console.log(coffee)
-    const { category, name, description, image, making_process, origin } = coffee;
+    const { category, name, rating, image, type, origin,popularity } = coffee;
     return (
         <div className="card bg-base-100 hover:shadow-md border-2 border-gray-100">
             <figure>
-                <img className='h-[300px] w-full object-cover' src={image} />
+                <img className='h-48 w-full object-cover' src={image} />
             </figure>
-            <div className="card-body">
-                <h2 className="card-title">{name}</h2>
+            <div className="p-4">
+                <h2 className="text-xl">Name: {name}</h2>
+                <p>Types: {type}</p>
+                <p>Category: {category}</p>
+                <p>Origin: {origin}</p>
+                <p>Rating: {rating}</p>
+                <p>Popularity: {popularity}</p>
                 
-                <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
-                </div>
+               
             </div>
         </div>
     );
