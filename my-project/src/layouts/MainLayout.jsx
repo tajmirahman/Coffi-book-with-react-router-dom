@@ -7,7 +7,9 @@ const MainLayout = () => {
     return (
         <div>
             {/* Navber */}
+            <div className="h-16">
             <Header></Header>
+            </div>
 
             <div className="min-h-[calc(100vh-232px)] container mx-auto px-20 py-12">
                 {/* Dainamic section */}

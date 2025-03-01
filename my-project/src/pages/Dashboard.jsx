@@ -2,7 +2,7 @@
 
 const Dashboard = () => {
     return (
-        <div className="py-12">
+        <div >
             <h2>Dashboard page</h2>
         </div>
     );

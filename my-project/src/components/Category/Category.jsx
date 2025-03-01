@@ -7,7 +7,7 @@ const Category = ({ category }) => {
         <div>
             <div role="tablist" className="tabs tabs-lifted py-12">
 
-                <NavLink to={`/category/${category.category}`} role="tab" className={({ isActive }) => `tab text-2xl font-thin ${isActive ? "tab-active" : ""}`}>{category.category}</NavLink>
+                <NavLink to={`/category/${category.category}`} role="tab" className={({ isActive }) => `tab lg:text-2xl font-thin ${isActive ? "tab-active" : ""}`}>{category.category}</NavLink>
 
             </div>
 
