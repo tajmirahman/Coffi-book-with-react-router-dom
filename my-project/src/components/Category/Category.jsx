@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import PropTypes from 'prop-types';
 
 const Category = ({ category }) => {
     // console.log(category)
     return (
         <div>
-            <div role="tablist" className="tabs tabs-lifted">
-                <Link to={`/category/${category.category}`} role="tab" className="tab">{category.category}</Link>
+            <div role="tablist" className="tabs tabs-lifted py-12">
+
+                <NavLink to={`/category/${category.category}`} role="tab" className={({ isActive }) => `tab text-2xl font-thin ${isActive ? "tab-active" : ""}`}>{category.category}</NavLink>
 
             </div>
 
