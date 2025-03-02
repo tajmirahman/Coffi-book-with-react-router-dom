@@ -18,7 +18,7 @@ const CoffeDetails = () => {
     }, [data, id])
 
     console.log(coffee);
-    const { ingredients, nutrition_info } = coffee;
+    const {making_process,name, ingredients, nutrition_info, origin } = coffee;
 
 
     return (
@@ -26,6 +26,11 @@ const CoffeDetails = () => {
             <h1 className="lg:text-3xl">Coffee Details {coffee.description}</h1>
             <div className="w-full h-[600px] object-cover ">
                 <img className="w-full h-[600px]  rounded-lg" src={coffee.image} alt="" />
+            </div>
+            <div className="space-y-2 text-xl">
+                <p>Name: {name}</p>
+                <p>Making: {making_process}</p>
+                <p>Origin: {origin}</p>
             </div>
             <div className="space-y-2">
                 <h1 className="text-2xl underline">Ingredients</h1>
