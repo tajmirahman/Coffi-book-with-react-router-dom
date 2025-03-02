@@ -12,6 +12,8 @@ const getAllFavorites=()=>{
     }
     
 }
+
+
 // add to local storage
 const addFavorite=(coffee)=>{
     const favorites=getAllFavorites();
@@ -26,5 +28,17 @@ const addFavorite=(coffee)=>{
 }
 
 
+// Remove form localstorage
 
-export {addFavorite,getAllFavorites}
+const removeFavorite=(id)=>{
+    const favorites=getAllFavorites();
+
+    const remaining= favorites.filter(fav=> fav.id != id);
+
+    localStorage.setItem('favorites',JSON.stringify(remaining));
+    toast.error('Remove successfully !');
+}
+
+
+
+export {addFavorite,getAllFavorites,removeFavorite}

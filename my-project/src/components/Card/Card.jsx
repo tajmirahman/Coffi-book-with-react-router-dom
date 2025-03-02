@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { MdDelete } from "react-icons/md";
 
-const Card = ({ coffee }) => {
+const Card = ({ coffee, handleRemoveFavorite }) => {
 
     const { pathname } = useLocation();
     console.log(pathname);
@@ -11,7 +11,7 @@ const Card = ({ coffee }) => {
     return (
 
         <div className="card bg-base-100 hover:shadow-md border-2 border-gray-100">
-            {pathname === '/dashboard' && <button className='absolute -top-5 -right-4 text-2xl text-red-400'><MdDelete /></button>}
+            {pathname === '/dashboard' && <div onClick={()=>handleRemoveFavorite(id)} className='absolute -top-5 -right-4 text-2xl rounded-full bg-warning p-2'><MdDelete /></div>}
             <figure className='object-cover'>
                 <img className='h-48 w-full' src={image} />
             </figure>
