@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import imgNu from '../assets/nutriton.jpg';
+import { addFavorite } from "../components/Utility/utility";
 
 
 
@@ -18,8 +19,13 @@ const CoffeDetails = () => {
         }
     }, [data, id])
 
-    console.log(coffee);
+    // console.log(coffee);
     const { making_process, name, ingredients, nutrition_info, origin } = coffee;
+
+    // add local storage handle button
+    const handleButton=(coffee)=>{
+        addFavorite(coffee);
+    }
 
 
     return (
@@ -27,6 +33,9 @@ const CoffeDetails = () => {
             <h1 className="lg:text-3xl">Coffee Details {coffee.description}</h1>
             <div className="w-full h-[600px] object-cover ">
                 <img className="w-full h-[600px]  rounded-lg" src={coffee.image} alt="" />
+            </div>
+            <div className="flex justify-end">
+                <button onClick={()=>handleButton(coffee)} className="btn btn-warning">Add Favorite</button>
             </div>
             <div className="space-y-2 text-xl">
                 <p>Name: {name}</p>
@@ -37,7 +46,7 @@ const CoffeDetails = () => {
                 <h1 className="text-2xl underline">Ingredients</h1>
                 <ul>
                     {
-                        ingredients && ingredients.map(ing => <li key={ing}>{ing}</li>)
+                        ingredients && ingredients.map((ing,i) => <li key={i}>{ing}</li>)
 
                     }
                 </ul>
@@ -47,7 +56,7 @@ const CoffeDetails = () => {
                     <h1 className="text-2xl underline">Nutrition Info</h1>
                     <ul className="text-xl">
                         {
-                            nutrition_info && Object.keys(nutrition_info).map(n => <li className="list-disk" key={nutrition_info[n]}>
+                            nutrition_info && Object.keys(nutrition_info).map((n,i) => <li className="list-disk" key={i}>
                                 {n}: {nutrition_info[n]}
                             </li>)
                         }
