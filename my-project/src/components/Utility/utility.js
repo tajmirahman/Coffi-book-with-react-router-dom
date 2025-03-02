@@ -22,6 +22,7 @@ const addFavorite=(coffee)=>{
     }
     favorites.push(coffee);
     localStorage.setItem('favorites',JSON.stringify(favorites));
+    toast.success('Successfully created!');
 }
 
 
