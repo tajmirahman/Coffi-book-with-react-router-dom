@@ -1,13 +1,17 @@
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { MdDelete } from "react-icons/md";
 
 const Card = ({ coffee }) => {
-    // console.log(coffee)
+
+    const { pathname } = useLocation();
+    console.log(pathname);
+
     const { id, category, name, rating, image, type, origin, popularity } = coffee;
     return (
 
         <div className="card bg-base-100 hover:shadow-md border-2 border-gray-100">
-
+            {pathname === '/dashboard' && <button className='absolute -top-5 -right-4 text-2xl text-red-400'><MdDelete /></button>}
             <figure className='object-cover'>
                 <img className='h-48 w-full' src={image} />
             </figure>
