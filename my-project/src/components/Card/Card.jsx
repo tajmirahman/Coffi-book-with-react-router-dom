@@ -5,7 +5,7 @@ import { MdDelete } from "react-icons/md";
 const Card = ({ coffee, handleRemoveFavorite }) => {
 
     const { pathname } = useLocation();
-    console.log(pathname);
+    // console.log(pathname);
 
     const { id, category, name, rating, image, type, origin, popularity } = coffee;
     return (
@@ -24,7 +24,7 @@ const Card = ({ coffee, handleRemoveFavorite }) => {
                 <p>Popularity: {popularity}</p>
             </div>
             <div className='flex justify-end p-4'>
-                <Link to={`/coffee/${id}`} className='transition hover:scale-105 shadow-xl rounded-s-xl'><button className='btn btn-warning'>Details</button></Link>
+                <Link to={`/coffee/${id}`} ><button className='btn btn-warning'>Details</button></Link>
             </div>
         </div>
 
@@ -33,6 +33,7 @@ const Card = ({ coffee, handleRemoveFavorite }) => {
 
 Card.propTypes = {
     coffee: PropTypes.object.isRequired,
+    handleRemoveFavorite:PropTypes.object.isRequired,
 }
 
 

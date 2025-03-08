@@ -35,7 +35,9 @@ const Header = () => {
                 <ul className="menu menu-horizontal px-1 gap-4 text-2xl">
 
                     <NavLink to={'/'} className={({ isActive }) => `font-bold ${isActive ? "text-warning" : "hover:text-warning"}`}>Home</NavLink>
+
                     <NavLink to={'/coffee'} className={({ isActive }) => `font-bold ${isActive ? "text-warning" : "hover:text-warning"}`}>Coffee</NavLink>
+                    
                     <NavLink to={'/dashboard'} className={({ isActive }) => `font-bold ${isActive ? "text-warning" : "hover:text-warning"}`}>Dashboard</NavLink>
 
                 </ul>
