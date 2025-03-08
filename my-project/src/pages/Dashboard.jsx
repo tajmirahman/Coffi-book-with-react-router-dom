@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Title from "../components/HeadingTitle/Title";
 import { getAllFavorites, removeFavorite } from "../components/Utility/utility";
 import Card from "../components/Card/Card";
+import { Helmet } from "react-helmet-async";
 
 
 const Dashboard = () => {
@@ -23,7 +24,9 @@ const Dashboard = () => {
 
     return (
         <>
-
+            <Helmet>
+                <title>Coffee | Dashboard</title>
+            </Helmet>
             <div >
                 <Title
                     title={'Wellcome To Dashboard'}

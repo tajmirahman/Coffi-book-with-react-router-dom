@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import imgNu from '../assets/nutriton.jpg';
 import { addFavorite, getAllFavorites } from "../components/Utility/utility";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -17,7 +18,7 @@ const CoffeDetails = () => {
         if (data) {
             const findData = data.find(coffee => coffee.id == id);
             setCoffee(findData);
-            
+
             const favorites = getAllFavorites();
             const isExits = favorites.find(fav => fav.id == findData.id);
             if (isExits) {
@@ -37,45 +38,51 @@ const CoffeDetails = () => {
 
 
     return (
-        <div className="space-y-6">
-            <h1 className="lg:text-3xl">Coffee Details {coffee.description}</h1>
-            <div className="w-full h-[600px] object-cover ">
-                <img className="w-full h-[600px]  rounded-lg" src={coffee.image} alt="" />
-            </div>
-            <div className="flex justify-end">
-                <button disabled={favorite} onClick={() => handleButton(coffee)} className="btn btn-warning">Add Favorite</button>
-            </div>
-            <div className="space-y-2 text-xl">
-                <p>Name: {name}</p>
-                <p>Making: {making_process}</p>
-                <p>Origin: {origin}</p>
-            </div>
-            <div className="space-y-2">
-                <h1 className="text-2xl underline">Ingredients</h1>
-                <ul>
-                    {
-                        ingredients && ingredients.map((ing, i) => <li key={i}>{ing}</li>)
 
-                    }
-                </ul>
-            </div>
-            <div className="flex justify-between items-center">
-                <div className="flex-1 space-y-2 ">
-                    <h1 className="text-2xl underline">Nutrition Info</h1>
-                    <ul className="text-xl">
+        <>
+            <Helmet>
+                <title>Coffee | Dashboard</title>
+            </Helmet>
+            <div className="space-y-6">
+                <h1 className="lg:text-3xl">Coffee Details {coffee.description}</h1>
+                <div className="w-full h-[600px] object-cover ">
+                    <img className="w-full h-[600px]  rounded-lg" src={coffee.image} alt="" />
+                </div>
+                <div className="flex justify-end">
+                    <button disabled={favorite} onClick={() => handleButton(coffee)} className="btn btn-warning">Add Favorite</button>
+                </div>
+                <div className="space-y-2 text-xl">
+                    <p>Name: {name}</p>
+                    <p>Making: {making_process}</p>
+                    <p>Origin: {origin}</p>
+                </div>
+                <div className="space-y-2">
+                    <h1 className="text-2xl underline">Ingredients</h1>
+                    <ul>
                         {
-                            nutrition_info && Object.keys(nutrition_info).map((n, i) => <li className="list-disk" key={i}>
-                                {n}: {nutrition_info[n]}
-                            </li>)
+                            ingredients && ingredients.map((ing, i) => <li key={i}>{ing}</li>)
+
                         }
                     </ul>
                 </div>
-                <div className="flex-1 object-cover">
-                    <img className="w-[500px] rounded-lg" src={imgNu} alt="" />
-                </div>
+                <div className="flex justify-between items-center">
+                    <div className="flex-1 space-y-2 ">
+                        <h1 className="text-2xl underline">Nutrition Info</h1>
+                        <ul className="text-xl">
+                            {
+                                nutrition_info && Object.keys(nutrition_info).map((n, i) => <li className="list-disk" key={i}>
+                                    {n}: {nutrition_info[n]}
+                                </li>)
+                            }
+                        </ul>
+                    </div>
+                    <div className="flex-1 object-cover">
+                        <img className="w-[500px] rounded-lg" src={imgNu} alt="" />
+                    </div>
 
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 
